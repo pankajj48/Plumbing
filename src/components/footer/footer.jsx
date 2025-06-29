@@ -1,7 +1,8 @@
-import React from 'react';
+
 import './Footer.css';
-import { FaFacebookF, FaInstagram, FaYoutube, FaLocationDot, FaPhone, FaEnvelope } from 'react-icons/fa6';
-import Footlogo from '../../../public/logo-f.png'
+import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaLocationDot, FaPhone, FaEnvelope } from 'react-icons/fa6';
+import Footlogo from '../../assets/logo-f.png'; // ✅ corrected path
 
 function Footer() {
   return (
@@ -9,8 +10,8 @@ function Footer() {
       <div className="footer-container">
 
         <div className="footer-about">
-          <img src={Footlogo} className="footer-logo" />
-          <p>We are in the business of sanitary<br/> providers and all types of plumbing<br/> products. Check out our<br/> best-selling brands.</p>
+          <img src={Footlogo} className="footer-logo" alt="Logo" />
+          <p>We are in the business of sanitary<br /> providers and all types of plumbing<br /> products. Check out our<br /> best-selling brands.</p>
           <div className="newsletter">
             <h4>Subscribe to Newsletter</h4>
             <div className="newsletter-input">
@@ -21,7 +22,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Column 2: Useful Links */}
         <div className="footer-links">
           <h4>Useful Links</h4>
           <ul>
@@ -31,7 +31,6 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 3: Quick Links */}
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
@@ -40,12 +39,11 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 4: Contact */}
         <div className="footer-contact">
           <h4>Contact</h4>
           <div className="contact-item">
             <FaLocationDot className="icon" />
-            <span>BARGARH, odisha</span>
+            <span>BARGARH, Odisha</span>
           </div>
           <div className="contact-item">
             <FaPhone className="icon" />
@@ -59,7 +57,6 @@ function Footer() {
 
       </div>
 
-      {/* Bottom Row: Social */}
       <div className="footer-bottom">
         <h4>Follow us</h4>
         <div className="social-icons">
@@ -69,11 +66,9 @@ function Footer() {
         </div>
       </div>
 
-      <div className='copyright'>
-        <span > ©️Pankajj</span>
+      <div className="copyright">
+        <span>©️ Pankajj</span>
       </div>
-        
-
     </footer>
   );
 }

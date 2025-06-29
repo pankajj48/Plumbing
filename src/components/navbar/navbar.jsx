@@ -1,18 +1,17 @@
 import "./navbar.css";
 import { useNavigate, useLocation } from "react-router-dom";
+import logo from '../../assets/logo-f.png';
 import { useState, useEffect } from "react";
 import {
-  FaPhoneAlt, FaFacebookF, FaYoutube, FaShoppingCart as FaCart, FaHeart
+  FaPhoneAlt, FaFacebookF, FaYoutube, FaShoppingCart as FaCart, FaHeart,
+  FaMapMarkerAlt, FaInstagram, FaUser
 } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa6";
 import {
   CiSearch, CiHeart, CiShoppingCart, CiUser, CiBellOn
 } from "react-icons/ci";
 import { IoHome } from "react-icons/io5";
 import { AiFillProduct } from "react-icons/ai";
-import { FaUser } from "react-icons/fa";
 
 function NavSec({ cartItems, wishlistItems, isLoggedIn, setIsLoggedIn }) {
   const navigate = useNavigate();
@@ -24,12 +23,13 @@ function NavSec({ cartItems, wishlistItems, isLoggedIn, setIsLoggedIn }) {
   const [password, setPassword] = useState('');
 
   useEffect(() => {
-    if (location.pathname === "/") setActiveTab("home");
-    else if (location.pathname === "/about") setActiveTab("about");
-    else if (location.pathname === "/product") setActiveTab("product");
-    else if (location.pathname === "/contact") setActiveTab("contact");
-    else if (location.pathname === "/cart") setActiveTab("cart");
-    else if (location.pathname === "/wishlist") setActiveTab("wishlist");
+    const path = location.pathname;
+    if (path === "/") setActiveTab("home");
+    else if (path === "/about") setActiveTab("about");
+    else if (path === "/product") setActiveTab("product");
+    else if (path === "/contact") setActiveTab("contact");
+    else if (path === "/cart") setActiveTab("cart");
+    else if (path === "/wishlist") setActiveTab("wishlist");
     else setActiveTab("");
   }, [location.pathname]);
 
@@ -61,7 +61,7 @@ function NavSec({ cartItems, wishlistItems, isLoggedIn, setIsLoggedIn }) {
       {/* --- Top Section --- */}
       <div className="up">
         <div className="leftwala">
-          <FaLocationDot className="up-icon" />
+          <FaMapMarkerAlt className="up-icon" />
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <MdEmail className="up-icon" /> PlumbingBazzar@gmail.com
           </div>
@@ -81,7 +81,7 @@ function NavSec({ cartItems, wishlistItems, isLoggedIn, setIsLoggedIn }) {
       <div className="down">
         <div className="links">
           <div className="logo">
-            <img src="/logo-f.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
           </div>
 
           <nav>
@@ -132,7 +132,7 @@ function NavSec({ cartItems, wishlistItems, isLoggedIn, setIsLoggedIn }) {
         </div>
 
         <div className="logobtm">
-          <img src="/logo-f.png" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
 
         <div onClick={() => goTo("/cart", "cart")}>
@@ -189,7 +189,7 @@ function NavSec({ cartItems, wishlistItems, isLoggedIn, setIsLoggedIn }) {
         </div>
       )}
 
-      {/* --- User Sidebar + Overlay (Mobile) --- */}
+      {/* --- User Sidebar (Mobile) --- */}
       {showSidebar && (
         <div className="user-sidebar-overlay" onClick={() => setShowSidebar(false)}>
           <div className="user-sidebar" onClick={(e) => e.stopPropagation()}>

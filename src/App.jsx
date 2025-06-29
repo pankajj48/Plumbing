@@ -15,9 +15,9 @@ import ThankYou from './components/cart/ThankYou';
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [wishlistItems, setWishlistItems] = useState([]);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // ✅ Login status
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Login status
 
-  // ✅ Add to Cart
+  // Add to Cart
   const handleAddToCart = (item) => {
     const alreadyInCart = cartItems.some((cartItem) => cartItem.title === item.title);
     if (alreadyInCart) {
@@ -28,7 +28,7 @@ function App() {
     alert('Added to cart');
   };
 
-  // ✅ Add to Wishlist
+  // Add to Wishlist
   const handleAddToWishlist = (item) => {
     const alreadyInWishlist = wishlistItems.some((wishlistItem) => wishlistItem.title === item.title);
     if (alreadyInWishlist) {
@@ -40,7 +40,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/plumbing">
       <div className="navbar">
         <Navbar
           cartItems={cartItems}
@@ -48,7 +48,6 @@ function App() {
           isLoggedIn={isLoggedIn}
           setIsLoggedIn={setIsLoggedIn}
         />
-
       </div>
 
       <main>
