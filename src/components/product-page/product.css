@@ -1,0 +1,220 @@
+/* product.css */
+
+.offer-products-section {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.offer-products-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.offer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Individual product card */
+.offer-card {
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.offer-card p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Price styling */
+.price {
+  color: green;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Add to Cart button */
+.button-cart {
+  background-color: rgb(10, 177, 243);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  width: 80%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-cart:hover {
+  background-color: rgb(7, 144, 200);
+}
+
+.button-wishlist {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-wishlist:hover {
+  background-color: #e91e63;
+}
+
+
+.imgsec{
+    padding: 0 10px;
+}
+.imgsec img{
+    margin: 160px 0 0 0;
+    border-radius: 10px;
+    width: 100%;
+    background-color: pink;
+}
+
+
+@media (max-width: 600px) {
+  .offer-products-section {
+    padding: 12px 4px;
+  }
+  .offer-products-section h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .offer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    justify-items: center;
+  }
+  .offer-card {
+    width: 98%;
+    padding: 10px 6px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .offer-card img {
+    border-radius: 6px;
+  }
+  .offer-card p {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+  .price {
+    font-size: 14px;
+  }
+  .original {
+    font-size: 12px;
+  }
+  .button-cart,
+  .button-wishlist {
+    font-size: 13px;
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 16px;
+  }
+  .imgsec img {
+    margin: 20px 0 0 0;
+    border-radius: 6px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .offer-products-section {
+    padding: 24px;
+  }
+
+  .offer-products-section h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .offer-card {
+    width: 100%;
+    max-width: 220px;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  .offer-card img {
+    border-radius: 8px;
+  }
+
+  .offer-card p {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .original {
+    font-size: 13px;
+  }
+
+  .button-cart,
+  .button-wishlist {
+    font-size: 14px;
+    padding: 9px 0;
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  .imgsec {
+    padding: 0 20px;
+  }
+
+  .imgsec img {
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "HINDWARE MARVEL EWC",
+    "type": "HINDWARE MARVEL EWC",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Floor Mounted EWC",
+    "dimensions": "370x560x410mm",
+    "price": "₹ 2,499.00",
+    "oldPrice": "₹3,200.00"
+  },
+  {
+    "id": 2,
+    "name": "CERA STYLE PLUS",
+    "type": "CERA STYLE PLUS",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Wall Hung WC | CR5678",
+    "dimensions": "355x520x390mm",
+    "price": "₹ 2,599.00",
+    "oldPrice": "₹4,000.00"
+  },
+  {
+    "id": 3,
+    "name": "PARRYWARE JAZZ",
+    "type": "PARRYWARE JAZZ",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Floor Standing WC | PW9101 (P Trap)",
+    "dimensions": "365x540x400mm",
+    "price": "₹ 2,699.00",
+    "oldPrice": "₹3,650.00"
+  },
+  {
+    "id": 4,
+    "name": "JAQUAR SOLO",
+    "type": "JAQUAR SOLO",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Wall Hung EWC | JQ2020",
+    "dimensions": "360x500x390mm",
+    "price": "₹ 2,799.00",
+    "oldPrice": "₹4,300.00"
+  },
+  {
+    "id": 5,
+    "name": "SOMANY PRIMO",
+    "type": "SOMANY PRIMO",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Floor Mounted EWC | SM3030",
+    "dimensions": "370x550x410mm",
+    "price": "₹ 2,899.00",
+    "oldPrice": "₹3,400.00"
+  },
+  {
+    "id": 6,
+    "name": "ROCA NEXO",
+    "type": "ROCA NEXO",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Wall Hung WC | RC4040",
+    "dimensions": "355x510x390mm",
+    "price": "₹ 2,999.00",
+    "oldPrice": "₹4,100.00"
+  },
+  {
+    "id": 7,
+    "name": "KEROVIT BLAZE",
+    "type": "KEROVIT BLAZE",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Floor Standing EWC | KV5050",
+    "dimensions": "360x545x400mm",
+    "price": "₹ 3,099.00",
+    "oldPrice": "₹3,750.00"
+  },
+  {
+    "id": 8,
+    "name": "VITRA SENTO",
+    "type": "VITRA SENTO",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Wall Hung WC | VT6060",
+    "dimensions": "355x520x390mm",
+    "price": "₹ 3,199.00",
+    "oldPrice": "₹4,500.00"
+  },
+  {
+    "id": 9,
+    "name": "TOTO AQUA",
+    "type": "TOTO AQUA",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Floor Mounted EWC | TT7070",
+    "dimensions": "370x560x410mm",
+    "price": "₹ 3,299.00",
+    "oldPrice": "₹3,900.00"
+  },
+  {
+    "id": 10,
+    "name": "KOHLER MODERNLIFE",
+    "type": "KOHLER MODERNLIFE",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Wall Hung WC | KH8080",
+    "dimensions": "360x500x390mm",
+    "price": "₹ 3,399.00",
+    "oldPrice": "₹5,000.00"
+  },
+  {
+    "id": 11,
+    "name": "GROHE EURO",
+    "type": "GROHE EURO",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Floor Standing EWC | GR9090",
+    "dimensions": "365x540x400mm",
+    "price": "₹ 3,499.00",
+    "oldPrice": "₹4,200.00"
+  },
+  {
+    "id": 12,
+    "name": "DURAVIT D-NEO",
+    "type": "DURAVIT D-NEO",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Wall Hung WC | DU1010",
+    "dimensions": "355x510x390mm",
+    "price": "₹ 3,599.00",
+    "oldPrice": "₹4,900.00"
+  },
+  {
+    "id": 13,
+    "name": "AMERICAN STANDARD ACACIA",
+    "type": "AMERICAN STANDARD ACACIA",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Floor Mounted EWC | AS1111",
+    "dimensions": "370x550x410mm",
+    "price": "₹ 3,699.00",
+    "oldPrice": "₹4,600.00"
+  },
+  {
+    "id": 14,
+    "name": "VILLEROY & BOCH SUBWAY",
+    "type": "VILLEROY & BOCH SUBWAY",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Wall Hung WC | VB1212",
+    "dimensions": "360x500x390mm",
+    "price": "₹ 3,799.00",
+    "oldPrice": "₹6,000.00"
+  },
+  {
+    "id": 15,
+    "name": "VILLEROY & BOCH SUBWAY",
+    "type": "VILLEROY & BOCH SUBWAY",
+    "image": "./product.jpg",
+    "route": "commode",
+    "title": "Wall Hung WC | VB1212",
+    "dimensions": "360x500x390mm",
+    "price": "₹ 3,899.00",
+    "oldPrice": "₹6,000.00"
+  }
+]

@@ -1,0 +1,538 @@
+#nav-sec{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid rgba(201, 201, 201, 0.611);
+    height: 140px;
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: white;
+}
+
+#nav-sec hr{
+    border: 1px solid rgba(201, 201, 201, 0.466);
+    width: 100%;
+}
+.up{
+    display: flex;
+    justify-content: space-around;
+}
+.leftwala{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.rightwala{
+    display: flex;
+    gap: 25px;
+    align-items:center ;
+}
+
+.down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 100px;
+    height: 60px;
+}
+nav{
+    display: flex;
+    gap: 25px;
+}
+nav li{
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav li:hover{
+    cursor: pointer;
+}
+
+nav li select{
+    border: none;
+    font-weight: bold;
+}
+.loginwale{
+    display: flex;
+    gap: 15px;
+}
+.login-btn button{
+    width: 140px;
+    height: 42px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(18, 187, 254);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    gap: 15px;
+}
+.icons button {
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+}
+
+.icons button:hover{
+    cursor: pointer;
+}
+
+.bottombar{
+    display: none;
+}
+
+.up-icon{
+    cursor: pointer;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li.active,
+.up-icon.active,
+.btmlogo.active {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.btmlogo.active {
+    transform: scale(1.2) translateY(-7px);
+}
+
+/* ---------------------- Login Modal ---------------------- */
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5); /* Dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above everything */
+}
+
+.login-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.extra-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.extra-options input {
+  margin-right: 5px;
+}
+
+.login-butn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #2980b9;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link span {
+  color: #3498db;
+  cursor: pointer;
+}
+
+.close-login {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* //////////////////////////////////// */
+
+
+.user-sidebar-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9998;
+  }
+
+  .user-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease-in-out;
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .sidebar-content p {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .sidebar-content .user-email {
+    font-size: 15px;
+    color: #555;
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 5px;
+    word-break: break-word;
+  }
+
+  .sidebar-content button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .sidebar-content button:hover {
+    background-color: #0056b3;
+  }
+
+  .close-sidebar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: #333;
+  }
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .down{
+        display: none;
+    }
+    #nav-sec{
+        height: 45px;
+    }
+
+    .bottombar{
+        background-color: white;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 590px;
+        height: 55px;
+        border-top: 2px solid grey;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        gap: 40px;
+        justify-content: center;
+        align-items: end;
+        padding: 12px;
+    }
+
+    .logobtm{
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+        border-top: 2px solid grey;
+    }
+
+    .logobtm img{
+        width: 70px;
+        height: 50px;
+    }
+
+    .btmlogo{
+        width: 25px;
+        height: 25px;
+    }
+
+    .rightwala{
+        display: none;
+    }
+
+    .up-icon{
+    cursor: pointer;
+    }
+
+    /* ---------------------- User Sidebar (Mobile) ---------------------- */
+
+.user-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: slideIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.sidebar-content p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sidebar-content button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sidebar-content button:hover {
+  background-color: #0056b3;
+}
+
+.close-sidebar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ----- Overlay for Sidebar ----- */
+.user-sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Dim effect */
+  z-index: 9998;
+}
+
+/* Ensure sidebar stays above the overlay */
+.user-sidebar {
+  z-index: 9999;
+}
+
+.user-email {
+  font-size: 15px;
+  color: #555;
+  background-color: #f2f2f2;
+  padding: 8px 12px;
+  border-radius: 5px;
+  word-break: break-word;
+}
+
+
+/* Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+  /* ---- Main Adjustments for Tablet View ---- */
+  #nav-sec {
+    height: auto;
+    
+  }
+
+  .up {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  .leftwala, .rightwala {
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .down {
+    display: none; /* Hide top nav bar to make space for tablet UI */
+  }
+
+  .bottombar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .bottombar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    font-size: 12px;
+  }
+
+  .bottombar .btmlogo {
+    width: 28px;
+    height: 28px;
+  }
+
+.logobtm{
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+        border-top: 2px solid grey;
+        padding-bottom: 30px;
+    }
+
+    .logobtm img{
+        width: 70px;
+        height: 50px;
+    }
+
+  /* ---- Sidebar for Tablet ---- */
+  .user-sidebar {
+    width: 270px;
+    padding: 25px;
+    animation: slideIn 0.3s ease-in-out;
+  }
+
+  .sidebar-content p {
+    font-size: 17px;
+  }
+
+  .sidebar-content .user-email {
+    font-size: 14px;
+  }
+
+  .sidebar-content button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .close-sidebar {
+    font-size: 18px;
+    top: 12px;
+    right: 18px;
+  }
+
+  /* Optional: Adjust icon spacing in top section */
+  .up-icon {
+    font-size: 18px;
+  }
+
+}
+

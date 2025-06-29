@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0 ;
+}
+
+#home{
+    width: 100%;
+}
+
+.video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 180px;
+}
+
+.video video{
+    width: 96%;
+    border-radius: 20px;
+}
+
+.sanitary{
+    margin-top: 20px;
+}
+
+.sani-head{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.fortext h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.fortext{
+    display: flex;
+    align-items: center;
+}
+
+.forHR{
+    width: 100%;
+}
+.forHR hr{
+    font-weight: bold;
+}
+
+.sani-cont{
+    padding: 0 25px;
+}
+.products-sec{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    font-weight: 400;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-card:hover {
+    cursor: pointer;
+}
+
+.img-sec{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-sec img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.why{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.why p{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.why img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .products-sec {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .products-sec {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .video {
+        padding-top: 100px;
+    }
+    .sani-head {
+        font-size: 20px;
+    }
+    .fortext h3 {
+        font-size: 20px;
+    }
+    .why p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-sec {
+            grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .video {
+        padding-top: 50px;
+    }
+    .sani-head {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .fortext h3 {
+        font-size: 16px;
+    }
+    .sani-cont {
+        padding: 0 10px;
+    }
+    .why {
+        padding: 0 10px;
+    }
+    .why p {
+        font-size: 16px;
+    }
+    .img-sec {
+        height: 180px;
+    }
+    .product-card {
+        height: 220px;
+        width: 100%;
+    }
+}
