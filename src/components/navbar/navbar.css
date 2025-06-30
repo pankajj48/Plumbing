@@ -305,19 +305,14 @@ nav li.active,
     }
 
     .bottombar{
-        background-color: white;
         display: flex;
-        position: absolute;
+        position: fixed;
         width: 100%;
-        top: 590px;
-        height: 55px;
-        border-top: 2px solid grey;
+        top: 740px;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
-        gap: 40px;
-        justify-content: center;
-        align-items: end;
-        padding: 12px;
+        gap: 35px;
+        padding: 10px;
     }
 
     .logobtm{
