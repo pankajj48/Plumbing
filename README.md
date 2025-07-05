@@ -1,4 +1,4 @@
-                                                             Plumbing Bazzar – Sanitaryware & Hardware React Web App
+                                                    Plumbing Bazzar – Sanitaryware & Hardware React Web App
 
 Welcome to **Plumbing Bazzar**, a full-featured and responsive web application built using **ReactJS**. It serves as a plumbing and sanitaryware product showcase platform with a modern UI, dynamic product pages, cart/wishlist functionality, and seamless navigation. Perfect for a bathroom hardware brand, eCommerce demo, or product catalog frontend.
 
