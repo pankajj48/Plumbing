@@ -28,8 +28,8 @@ Welcome to **Plumbing Bazzar**, a full-featured and responsive web application b
 
 ## 📸 Screenshots
 
-| Home Page | Product Detail | Cart | Wishlist |
-|-----------|----------------|------|----------|
+| ScreenShots | 
+|-----------|
 |![image](https://github.com/user-attachments/assets/fed18723-f850-4f8e-b538-731a95e855dd)
 | ![image](https://github.com/user-attachments/assets/7a8decd0-cf73-43ed-97e5-cd02b2c79aa0)
 | ![image](https://github.com/user-attachments/assets/68062f70-4bb4-4231-a613-4e064515c130)
@@ -45,7 +45,7 @@ Welcome to **Plumbing Bazzar**, a full-featured and responsive web application b
 - **React Router DOM**
 - **CSS3** (modular styles)
 - **JSX** for component logic
-- Optional: GitHub Pages / Netlify for deployment
+
 
 ---
 🚚 Future Enhancements
